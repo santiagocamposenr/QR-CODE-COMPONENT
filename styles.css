@@ -1,0 +1,66 @@
+/* Variables de colores */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+  }
+  
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo general del body */
+  body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px; /* Tamaño base para párrafos */
+    background-color: var(--slate-300); /* Fondo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background-color: var(--white); /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para efecto flotante */
+    max-width: 320px; /* Ancho ideal para móviles */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Imagen del código QR */
+  .qr-image {
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    width: 100%; /* Imagen ajustada al contenedor */
+    margin-bottom: 20px; /* Separación del texto */
+  }
+  
+  /* Título principal */
+  h1 {
+    font-size: 1.5rem; /* Tamaño destacado */
+    color: var(--slate-900); /* Texto oscuro */
+    margin-bottom: 10px;
+    font-weight: 700; /* Peso de fuente */
+  }
+  
+  /* Párrafo */
+  p {
+    font-size: 1rem; /* Tamaño de texto */
+    color: var(--slate-500); /* Texto gris */
+    line-height: 1.5; /* Espaciado entre líneas */
+  }
+  
+  /* Responsividad */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 400px; /* Ancho mayor en pantallas más grandes */
+    }
+  }
